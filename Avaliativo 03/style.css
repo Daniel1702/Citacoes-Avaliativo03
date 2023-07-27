@@ -1,0 +1,116 @@
+@keyframes changeColor {
+    0% {
+        color: #3f1707;
+        /* Cor inicial  */
+    }
+
+    50% {
+        color: #c03c0c;
+        /* Cor intermediária*/
+    }
+
+    100% {
+        color: #ff248a;
+        /* Cor final  */
+    }
+}
+
+@keyframes changeColorAuthor {
+    0% {
+        color: #333333;
+        /* Cor inicial  */
+    }
+
+    50% {
+        color: #696464;
+        /* Cor intermediária*/
+    }
+
+    100% {
+        color: #1d1816;
+        /* Cor final  */
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+    background-image: url('https://images.hdqwalls.com/download/geometry-lines-art-5k-3h-1920x1080.jpg');
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#app {
+    text-align: center;
+    max-width: 400px;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 3px 2px 10px #ff248a;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    animation: changeColor 3s infinite;
+}
+
+blockquote {
+    margin-bottom: 40px;
+}
+
+#quoteDisplay {
+    font-size: 25px;
+    font-style: italic;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+#authorDisplay {
+    font-size: 18px;
+    font-weight: bold;
+    color: #696464;
+
+    animation: changeColorAuthor 6s infinite;
+}
+
+button {
+    cursor: pointer;
+}
+
+#newQuoteButton {
+    background-color: #D95323;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 1px 1px #792c0e;
+
+    transition: 0.3s;
+}
+
+#newQuoteButton:hover {
+    background-color: #792c0e;
+    color: #e7bebe;
+}
+
+/* Media  */
+@media (max-width: 985px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
